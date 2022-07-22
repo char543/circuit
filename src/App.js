@@ -52,13 +52,13 @@ const response = await fetch("http://localhost:3001/send", {
 };
 
   return (
-    <div className="App h-screen bg-white justify-around items-center flex flex-col">
-      <img className='' src='room.jpg'></img>
-      <div className="z-10 flex justify-center items-center flex-col text-black">
+    <div className="App h-screen bg-[#3e3e30] justify-around items-center flex flex-col">
+      <img className='p-12' src='circuit.png'></img>
+      <div className="z-10 flex justify-center items-center flex-col">
           <span className="footer-title">Newsletter</span>
           <div className="form-control w-[280px] md:w-80">
             <label className="label">
-              <span className="label-text text-black font-semibold">Enter your email address</span>
+              <span className="label-text text-white font-semibold">Enter your email address</span>
             </label>
             <form className="relative" onSubmit={submitEmail}>
               <input
@@ -68,7 +68,7 @@ const response = await fetch("http://localhost:3001/send", {
                 name="email"
                 value={mailerState.email}
               />
-              <button className="btn btn-primary absolute top-0 right-0 rounded-l-none">
+              <button className="btn btn-primary bg-stone-600 hover:bg-stone-700 absolute top-0 right-0 rounded-l-none border-none">
                 Subscribe
               </button>
             </form>
